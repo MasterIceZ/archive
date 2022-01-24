@@ -8,5 +8,5 @@ struct DSU{
 	}
 	int find_root(int u){
 		return u == parent[u] ? u: parent[u] = find_root(parent[u]);
-	};
-}
+	}
+};
