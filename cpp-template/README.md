@@ -4,7 +4,7 @@
 - [bas](https://codeforces.com/profile/bas.z)
 - [Errichto](https://codeforces.com/profile/Errichto)
 ### Special Thanks
-- JO 
+- [JO](https://github.com/Vij-Jo) 
 	- [x] inline
 - [Jomnoi](https://github.com/JomnoiZ)
 	- [x] inline 
