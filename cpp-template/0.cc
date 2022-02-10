@@ -23,8 +23,6 @@ using namespace std;
 
 using ll = long long;
 
-int a[] = {0, 1, 2, 31, 4, 25, 63};
-
 inline void solution(){
 
 	return ;
