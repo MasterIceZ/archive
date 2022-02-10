@@ -37,6 +37,15 @@ string to_string(const char* s){
 	return string(s);
 }
 
+template<class T, class S> string to_string(pair<T, S> p){
+	string res = "(";
+	res += to_string(p.first);
+	res += ", ";
+	res += to_string(p.second);
+	res += ")";
+	return res;
+}
+
 template<class T> string to_string(T a[], size_t l, size_t r){
 	vector<T> vt = UTILS::to_vector(a, l, r);
 	string res;
