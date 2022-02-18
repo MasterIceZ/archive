@@ -25,6 +25,10 @@ namespace UTILS{
 	}
 }
 
+string to_string(bool x){
+	return x ? "TRUE": "FALSE";
+}
+
 string to_string(char s){
 	return string(1, s);
 }
