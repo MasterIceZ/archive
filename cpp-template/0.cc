@@ -10,9 +10,12 @@
 #include <ext/pb_ds/assoc_container.hpp>
 #include <ext/pb_ds/tree_policy.hpp>
 #include <ext/rope>
+
+#ifndef _DEBUG
 // @==== Libary ====@ //
 
 // @================@ //
+#endif
 
 using namespace std;
 using namespace __gnu_pbds;
