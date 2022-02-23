@@ -50,15 +50,18 @@ template<class T, class S> string to_string(pair<T, S> p){
 	return res;
 }
 
-template<class T> string to_string(T a[], size_t l, size_t r){
+template<class T> string to_string(T a[], size_t l, size_t r, string sep=", "){
 	vector<T> vt = UTILS::to_vector(a, l, r);
-	string res;
+	string res = "(";
 	bool ok = false;
 	for(auto x: vt){
+		if(ok){
+			res += sep;
+		}
 		ok = true;
 		res += to_string(x);
 	}
-	return res;
+	return res + ")";
 }
 
 template<class T> string to_string(T v){
