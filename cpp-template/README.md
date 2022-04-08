@@ -40,7 +40,7 @@ string s = to_string(a, 1, 4);
 - [bas](https://codeforces.com/profile/bas.z)
 - [Errichto](https://codeforces.com/profile/Errichto)
 ### Special Thanks
-- [JO](https://github.com/Vij-Jo) 
+- [JO](https://github.com/khajornritdacha) 
 	- [x] inline
 - [Jomnoi](https://github.com/JomnoiZ)
 	- [x] inline 
