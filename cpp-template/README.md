@@ -34,6 +34,24 @@ int a[10] = {1, 2, 5, 2, 3, 3, 1};
 string s = to_string(a, 1, 4);
 ```
 
+### Example Runner Usage
+You must compile ``example_run.cc`` to create executable version and execute it.  You can change ``TASKNAME`` below to run example test data of the task.
+**example:**
+```sh
+g++ -std=c++11 -Wall -O2 example_run.cc -o example_run.out
+./example_run TASKNAME < input.in
+```
+**example input.txt file:**
+```
+3
+1 2
+
+3 2
+
+4 3
+```
+As you can see, the first line of the file is number of testsets. Every test data must be splited with one empty line. You can see example of ``.vimrc`` for running the test data [here](https://github.com/MasterIceZ/vim-scripts/blob/main/contest.vim).
+
 ### Reference
 - [tmwilliamlin168](https://github.com/tmwilliamlin168/CompetitiveProgramming/blob/master/Templates/Main.cpp)
 - [RNR](https://codeforces.com/blog/entry/67830)
