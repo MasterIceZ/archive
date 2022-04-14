@@ -27,9 +27,13 @@ int main(int argc, char* argv[]){
 	string line = ".\\" + fileName + ".exe < buffer.txt";
 	for(int i=1; i<=n; ++i){
 		create_input();
+		auto start_time = chrono::steady_clock::now();
 		cout << "Testcase #" << i << ":\n";
 		system(line.c_str());
 		cout << "\n";
+		auto end_time = chrono::steady_clock::now();
+		double all_time = double(chrono::duration_cast <chrono::nanoseconds> (end_time - start_time).count());
+		cout << "Run Time: " << fixed << setprecision(2) << all_time / 1e9 << " second(s)\n\n";
 	}
 	return 0;
 }
