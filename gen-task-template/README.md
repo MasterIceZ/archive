@@ -1,7 +1,10 @@
 # Task Generating Template
 
+This template might be used with Linux only. (Others wasn't tested)
+
 ### Install requirement
 
+To use ``gen.sh`` as a generation script. You might have ``pwgen`` (in linux).
 ```sh
 $ sudo apt install pwgen
 ```
