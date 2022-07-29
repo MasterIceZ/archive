@@ -6,25 +6,24 @@
 #include <algorithm>
 #include <ext/pb_ds/assoc_container.hpp>
 #include <ext/pb_ds/tree_policy.hpp>
-using namespace __gnu_pbds;
 
 class compressor_precompute{
 private:
 	std::vector<int> c;
 public:
 	size_t get_value(int v){
-		return upper_bound(c.begin(), c.end(), v) - c.begin();
+		return std::upper_bound(c.begin(), c.end(), v) - c.begin();
 	}
 	compressor_precompute(std::vector<int> x){
 		c = x;
-		sort(c.begin(), c.end());
+		std::sort(c.begin(), c.end());
 		c.resize(unique(c.begin(), c.end()) - c.begin());
 	}
 };
 
 class compressor_set{
 private:
-	tree<int, null_type, std::less<int>, rb_tree_tag, tree_order_statistics_node_update> c; 
+	__gnu_pbds::tree<int, __gnu_pbds::null_type, std::less<int>, __gnu_pbds::rb_tree_tag, __gnu_pbds::tree_order_statistics_node_update> c; 
 public:
 	size_t get_value(int v){
 		return 1 + c.order_of_key(v);
@@ -32,6 +31,12 @@ public:
 	void add_value(int v){
 		c.insert(v);
 	}
+	compressor_set(std::vector<int> x){
+		for(auto _: x){
+			c.insert(_);
+		}
+	}
+	compressor_set() {}
 };
 
 #endif
