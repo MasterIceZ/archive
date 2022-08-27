@@ -23,6 +23,11 @@ public:
 			tree[idx] = (tree[idx] + value);
 		}
 	}
+	inline void clear(){
+		for(int idx=0; idx<sz; ++idx){
+			tree[idx] = 0;
+		}
+	}
 	T operator [] (const unsigned int idx){
 		return read(idx);
 	}
