@@ -1,6 +1,6 @@
 class disjoint_set{
 private:
-	vector<size_t> parent, sz;
+	size_t *parent, *sz;
 public:
 	inline size_t find_root(size_t u){
 		while(parent[u] != u){
@@ -23,8 +23,11 @@ public:
 		return find_root(idx);
 	}
 	disjoint_set(size_t n){
-		parent.resize(n + 16);
-		sz.resize(n + 16, 1);
-		iota(parent.begin() + 1, parent.begin() + n + 1, 1);
+		parent = (size_t *) calloc(n + 16, sizeof(size_t));
+		sz = (size_t *) calloc(n + 16, sizeof(size_t));
+		for(int i=1; i<=n; ++i){
+			parent[i] = i;
+			sz[i] = 1;
+		}
 	}
 };
