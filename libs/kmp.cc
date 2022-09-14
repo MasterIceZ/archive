@@ -1,4 +1,3 @@
-template<class T>
 class KMP{
 protected:
 	const unsigned int offset = (1 << 4);
