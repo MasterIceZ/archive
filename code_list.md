@@ -1,5 +1,23 @@
 # Stupid list of code(s)
 
+[Strings](https://github.com/MasterIceZ/archive/blob/main/code_list.md#strings)
+- [KMP](https://github.com/MasterIceZ/archive/blob/main/code_list.md#kmp-knuth-moris-pratt-pattern-matching)
+- [Rabin Karp](https://github.com/MasterIceZ/archive/blob/main/code_list.md#rabin-karp-hashing)
+- [Hash Table](https://github.com/MasterIceZ/archive/blob/main/code_list.md#hash-table)
+
+[Advanced Data](https://github.com/MasterIceZ/archive/blob/main/code_list.md#advanced-ds)
+- [Segment Tree](https://github.com/MasterIceZ/archive/blob/main/code_list.md#segment-tree)
+- [Lazy Segment Tree](https://github.com/MasterIceZ/archive/blob/main/code_list.md#lazy-propagation)
+- [LCA](https://github.com/MasterIceZ/archive/blob/main/code_list.md#lowest-common-ancestor---binary-lifting-lca) 
+- [RMQ](https://github.com/MasterIceZ/archive/blob/main/code_list.md#sparse-table-rmq)
+- [Fenwick Tree](https://github.com/MasterIceZ/archive/blob/main/code_list.md#fenwick-tree-binary-indexed-tree-bit)
+- [Sack](https://github.com/MasterIceZ/archive/blob/main/code_list.md#disjoint-set-on-tree-sack)
+- [MO](https://github.com/MasterIceZ/archive/blob/main/code_list.md#mos-algorithm)
+
+[Graphs](https://github.com/MasterIceZ/archive/blob/main/code_list.md#graphs)
+- [Dijksta](https://github.com/MasterIceZ/archive/blob/main/code_list.md#dijkstras-algorithm)
+- [Bellman Ford](https://github.com/MasterIceZ/archive/blob/main/code_list.md#bellman-fords-shortest-path)
+
 ## Strings
 
 ### KMP (Knuth Moris Pratt Pattern Matching)
